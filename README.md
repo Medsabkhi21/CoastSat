@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 # Shoreline detection and Erosion prediction in Mahdia, Tunisia region
 ## CoastSat project applied to Tunisia-Mahdia Coast line
 
 Based on  [CoastSat v2.1 release](https://GitHub.com/kvos/CoastSat/releases/)
 
-CoastSat is an open-source software toolkit written in Python that enables users to obtain time-series of shoreline position at any coastline worldwide from 30+ years (and growing) of publicly available satellite imagery.
+##### CoastSat is an open-source software toolkit written in Python that enables users to obtain time-series of shoreline position at any coastline worldwide from 30+ years (and growing) of publicly available satellite imagery.
 The underlying approach of the CoastSat toolkit is described in detail in the following publications:
 =======
 # CoastSat
