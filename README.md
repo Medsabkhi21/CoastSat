@@ -1,16 +1,9 @@
-# CoastSat
+# Shoreline detection and Erosion prediction in Mahdia, Tunisia region
+## CoastSat project applied to Tunisia-Mahdia Coast line
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2779293.svg)](https://doi.org/10.5281/zenodo.2779293)
-[![Join the chat at https://gitter.im/CoastSat/community](https://badges.gitter.im/spyder-ide/spyder.svg)](https://gitter.im/CoastSat/community)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub release](https://img.shields.io/github/release/kvos/CoastSat)](https://GitHub.com/kvos/CoastSat/releases/)
+Based on  [CoastSat v2.1 release](https://GitHub.com/kvos/CoastSat/releases/)
 
 CoastSat is an open-source software toolkit written in Python that enables users to obtain time-series of shoreline position at any coastline worldwide from 30+ years (and growing) of publicly available satellite imagery.
-
-Visit the [CoastSat website](http://coastsat.wrl.unsw.edu.au/) to explore and download regional-scale datasets of satellite-derived shorelines and beach slopes.
-
-![Alt text](https://github.com/kvos/CoastSat/blob/master/doc/example.gif)
-
 The underlying approach of the CoastSat toolkit is described in detail in the following publications:
 
 1. Shoreline detection algorithm: https://doi.org/10.1016/j.envsoft.2019.104528 (Open Access)
@@ -18,11 +11,6 @@ The underlying approach of the CoastSat toolkit is described in detail in the fo
 3. Beach slope estimation: https://doi.org/10.1029/2020GL088365 (preprint [here](https://www.essoar.org/doi/10.1002/essoar.10502903.2))
 4. Satellite-derived shorelines along meso-macrotidal beaches: https://doi.org/10.1016/j.geomorph.2021.107707
 
-Extensions to this toolbox:
-1. [CoastSat.slope](https://github.com/kvos/CoastSat.slope): estimates the beach-face slope from the satellite-derived shorelines obtained with CoastSat.
-2. [CoastSat.islands](https://github.com/mcuttler/CoastSat.islands): 2D planform measurements for small reef islands.
-3. [CoastSat.PlanetScope](https://github.com/ydoherty/CoastSat.PlanetScope): shoreline extraction for PlanetScope Dove imagery (near-daily since 2017 at 3m resolution).
-4. [InletTracker](https://github.com/VHeimhuber/InletTracker): monitoring of intermittent open/close estuary entrances.
 
 ### Description
 
@@ -79,21 +67,7 @@ Now you are ready to start using the CoastSat toolbox!
 
 ## 2. Usage
 
-An example of how to run the software in a Jupyter Notebook is provided in the repository (`example_jupyter.ipynb`). To run this, first activate your `coastsat` environment with `conda activate coastsat` (if not already active), and then type:
-
-```
-jupyter notebook
-```
-
-A web browser window will open. Point to the directory where you downloaded this repository and click on `example_jupyter.ipynb`.
-
-The following sections guide the reader through the different functionalities of CoastSat with an example at Narrabeen-Collaroy beach (Australia). If you prefer to use **Spyder**, **PyCharm** or other integrated development environments (IDEs), a Python script named `example.py` is also included in the repository.
-
-If using `example.py` on **Spyder**, make sure that the Graphics Backend is set to **Automatic** and not **Inline** (as this mode doesn't allow to interact with the figures). To change this setting go under Preferences>IPython console>Graphics.
-
-A Jupyter Notebook combines formatted text and code. To run the code, place your cursor inside one of the code sections and click on the `run cell` button (or press `Shift` + `Enter`) and progress forward.
-
-![run_cell](https://user-images.githubusercontent.com/7217258/60766570-c2100080-a0ee-11e9-9675-e2aeba87e4a7.png)
+An example of how to run the software in a Jupyter Notebook is provided in the repository (`Tunisia_Mahdia_shoreline_detection.ipynb`). To run this, first activate your `coastsat` environment with `conda activate coastsat`
 
 ### 2.1 Retrieval of the satellite images
 
@@ -219,16 +193,6 @@ In order to tidally-correct the time-series of shoreline change you will need th
 
 Wave setup and runup corrections are not included in the toolbox, but for more information on these additional corrections see [Castelle et al. 2021](https://doi.org/10.1016/j.geomorph.2021.107707).
 
-## Issues
-Having a problem? Post an issue in the [Issues page](https://github.com/kvos/coastsat/issues) (please do not email).
-
-## Contributing
-If you are willing to contribute, check out our todo list in the [Projects page](https://github.com/kvos/CoastSat/projects/1).
-1. Fork the repository (https://github.com/kvos/coastsat/fork).
-A fork is a copy on which you can make your changes.
-2. Create a new branch on your fork
-3. Commit your changes and push them to your branch
-4. When the branch is ready to be merged, create a Pull Request (how to make a clean pull request explained [here](https://gist.github.com/MarcDiethelm/7303312))
 
 ## References
 
